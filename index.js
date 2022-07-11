@@ -46,3 +46,15 @@ function toggleModal(){
     document.body.classList += " modal--open";
     
 }
+
+
+let contrast = false;
+function toggleContrast(){
+    contrast = !contrast;
+    if(contrast){
+        document.body.classList += " dark-theme"
+    }
+    else{
+        document.body.classList.remove("dark-theme")
+    }
+}
