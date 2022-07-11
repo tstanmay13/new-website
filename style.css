@@ -731,3 +731,59 @@ footer {
 .footer__copyright {
   color: white;
 }
+
+
+
+/* 
+
+SHPAES
+
+*/
+
+.shape{
+  position: fixed;
+}
+
+
+.shape--1{
+  top: 15vh;
+  left: 5vh;
+}
+
+.shape--2{
+  top: 15vh;
+  left: 50vh;
+}
+.shape--3{
+  top: 15vh;
+  left: 80vh;
+}
+
+/*  */
+.shape--4{
+  top: 50vh;
+  left: 5vh;
+}
+.shape--5{
+  top: 50vh;
+  left: 50vh;
+  /* transform: rotate(45deg); */
+}
+.shape--6{
+  top: 50vh;
+  left: 80vh;
+}
+
+/*  */
+.shape--7{
+  top: 80vh;
+  left: 5vh;
+}
+.shape--8{
+  top: 80vh;
+  left: 50vh;
+}
+.shape--9{
+  top: 80vh;
+  left: 80vh;
+}
