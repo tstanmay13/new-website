@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tanmay Singh</title>
     <link rel="stylesheet" href="/style.css" />
+    <script src="index.js"></script>
     <script
       src="https://kit.fontawesome.com/10a73d7bfa.js"
       crossorigin="anonymous"
     ></script>
 
     <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
       emailjs.init("pDlKgbHRQ6pawlQE9");
-   })();
-</script>
+    })();
+    </script>
   </head>
 
   <body>
@@ -153,20 +154,20 @@
         <div class="modal__half modal__contact">
           <h3 class="modal__title modal__title--contact">Let's have a Chat!</h3>
           <h4 class="modal__sub-title modal__sub-title--contact"> I'm currently open to new opportunities  </h4>
-          <form action="" id="contact__form">
+          <form onsubmit="contact(event)" id="contact__form">
             <div class="form__item">
               <label for="name" class="form__item--label">Name </label>
-              <input type="text" name="user_name" class="input" required> </input>
+              <input type="text" name="user_name" class="input" > </input>
             </div>
 
             <div class="form__item">
               <label for="email" class="form__item--label">Email </label>
-              <input type="email" name="user_email" class="input" required></input>
+              <input type="email" name="user_email" class="input" ></input>
             </div>
 
             <div class="form__item">
               <label for="message" class="form__item--label">Message </label>
-              <textarea type="text" name="message" class="input"></textarea>
+              <textarea type="text" name="message" class="input" ></textarea>
             </div>
             
             <button id="contact__submit" class="form__submit">
