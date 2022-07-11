@@ -60,6 +60,18 @@ button {
 section {
   background-color: rgb(245, 245, 245);
   transition: all 300ms ease;
+  z-index: 2;
+  animation: fadein 2s;
+}
+
+@keyframes fadein{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
 }
 
 
@@ -756,7 +768,8 @@ SHPAES
 
 
 .shape{
-  position: fixed;
+  position: absolute;
+  z-index: 0;
 }
 
 
