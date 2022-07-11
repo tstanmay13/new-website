@@ -276,9 +276,11 @@ LANDING
   border: none;
   background-color: #242424;
   color: white;
-  position: absolute;
+  position: fixed;
   bottom: 32px;
   right: 40px;
+  z-index: 100;
+  box-shadow: 0 12px 30px rgb(0,0,0,0.28)
 }
 
 .scroll {
@@ -513,6 +515,7 @@ WORK
 
 */
 
+
 .work__list {
   display: flex;
   width: 100%;
@@ -521,6 +524,9 @@ WORK
 
 .work {
   width: 50%;
+  /* padding: 0px 8px; */
+  display: flex;
+  justify-content: center;
 }
 
 .work:hover .work__image {
@@ -529,22 +535,27 @@ WORK
 }
 
 .work__wrapper {
-  display: flex;
+  position: relative;
+  /* display: flex; */
   box-shadow: 0 20px 80px 0px rgba(0, 0, 0.45);
   border-radius: 20px;
   overflow: hidden;
-  position: relative;
   max-width: 500px;
-  margin: 0 auto;
 }
 
 .work__wrapper:hover .work__wrapper--bg {
   opacity: 0.7;
+  visibility: visible;
 }
 
 .work__wrapper:hover .work__description {
   opacity: 1;
   transform: translateX(0%);
+}
+
+.work__wrapper:hover .work__image{
+  transform: scale(1.07);
+  filter: blur(5px);
 }
 
 .work__wrapper--bg {
@@ -556,10 +567,12 @@ WORK
   background-color: #1c1d25;
   opacity: 0;
   transition: all 450ms ease;
+  visibility: hidden;
 }
 
 .work__description {
   /* opacity: 0; */
+  position: absolute;
   transition: opacity 300ms, transform 300ms ease;
   top: 20%;
   left: 30px;
@@ -597,7 +610,7 @@ WORK
 }
 
 .work__description--para {
-  margin: 16px 0px 8px 0;
+  margin: 16px 0px 16px 0;
 }
 
 /* 
@@ -699,6 +712,7 @@ FOOTER
 */
 
 footer {
+  position: relative;
   background-color: #242424;
   display: flex;
   padding: 6% 0;
@@ -739,6 +753,7 @@ footer {
 SHPAES
 
 */
+
 
 .shape{
   position: fixed;
@@ -786,4 +801,95 @@ SHPAES
 .shape--9{
   top: 80vh;
   left: 80vh;
+}
+
+/* small phones, tablets, large smart phones */
+@media (max-width: 768px){
+  .title {
+    font-size: 80px;
+  }
+
+  .header__para{
+    font-size: 20px;
+  }
+
+  .modal{
+    top: 0;
+    left: 0;
+    transform: none;
+    height: auto;
+    width: 100%;
+    flex-direction: column-reverse;
+    border-radius: 0;
+  }
+
+  .modal__half{
+    width: 100%;
+  }
+
+  .work__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .work{
+    padding-bottom: 32px;
+    width: 100%;
+  }
+
+  .work__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* small phones */
+
+@media (max-width: 480px){
+  .title{
+    font-size: 52px;
+  }
+
+  .header__para{
+    font-size: 18px;
+  }
+
+  .nav__link:first-child,
+  .nav__link:nth-child(3){
+    display: none;
+  }
+
+  .work__description--para,
+  .project__description--para{
+    display: none;
+  }
+
+  .work__description,
+  .project__description{
+    left: 0;
+    /* padding: 0; */
+    width: 100%;
+    text-align: center;
+  }
+
+  .work__description--sub-title{
+    margin-bottom: 8px;
+  }
+
+  .work__description--sub-title{
+    margin-bottom: 8px;
+  }
+
+  .work__description--tech{
+    margin-bottom: 8px;
+  }
+
+  .modal__half{
+    padding: 40px;
+  }
 }
