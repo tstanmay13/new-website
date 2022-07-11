@@ -5,10 +5,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  
 }
 
 html {
   scroll-behavior: smooth;
+  background-color: rgb(245, 245, 245);
 }
 
 li {
@@ -64,6 +66,11 @@ section {
   animation: fadein 2s;
 }
 
+/* section:not(:first-child){
+  opacity: 0;
+} */
+
+
 @keyframes fadein{
   0%{
     opacity: 0;
@@ -87,10 +94,32 @@ section {
 }
 
 .title {
-  font-size: 120px;
+  font-size: 100px;
   margin-bottom: 12px;
   text-align: left;
   line-height: 1;
+}
+
+.wave{
+  display: inline-block;
+  font-size: 80px;
+  animation: animate-wave 1000ms infinite ease;
+}
+
+@keyframes animate-wave{
+  0%{
+      transform: rotate(0);
+  }
+  30%{
+      transform: rotate(30deg);
+  }
+
+  60%{
+    transform: rotate(0);
+  }
+  0%{
+      transform: rotate(0);
+  }
 }
 
 .secondary-color {
@@ -252,6 +281,37 @@ LANDING
   width: 100%;
   max-width: 1000px;
   padding: 0 30px;
+}
+
+.header__content{
+  display: flex;
+
+}
+
+.header__description{
+  width: 70%;
+}
+
+
+.me__container{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+}
+
+
+.me__image--wrapper{
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.28);
+}
+
+.me__image{
+  width: 105%;
+  transform: scale(1.05);
+  /* height: 100%; */
 }
 
 .header__para {
@@ -536,7 +596,7 @@ WORK
 
 .work {
   width: 50%;
-  /* padding: 0px 8px; */
+  padding: 0px 8px;
   display: flex;
   justify-content: center;
 }
@@ -831,6 +891,14 @@ SHPAES
 
   .header__para{
     font-size: 20px;
+  }
+
+  .me__container{
+    display: none;
+  }
+
+  .header__description{
+    width: 100%;
   }
 
   .modal{
