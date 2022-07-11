@@ -767,8 +767,15 @@ SHPAES
 */
 
 
-.shape{
+.shapes__wrapper{
+  width: 100%;
+  max-width: 1200px;
   position: relative;
+  margin: 0 auto;
+}
+
+.shape{
+  position: absolute;
   z-index: 0;
 }
 
