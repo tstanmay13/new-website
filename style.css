@@ -896,6 +896,11 @@ SHPAES
 
 /* small phones, tablets, large smart phones */
 @media (max-width: 768px){
+
+  .shape{
+    display: none;
+  }
+
   .title {
     font-size: 80px;
   }
@@ -950,6 +955,10 @@ SHPAES
 /* small phones */
 
 @media (max-width: 480px){
+
+
+
+
   .title{
     font-size: 52px;
   }
