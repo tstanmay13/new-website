@@ -872,7 +872,7 @@ SHPAES
 .shape--5{
   top: 50vh;
   left: 50vh;
-  /* transform: rotate(45deg); */
+  opacity: .5;
 }
 .shape--6{
   top: 50vh;
