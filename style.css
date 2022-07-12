@@ -873,6 +873,7 @@ SHPAES
   top: 50vh;
   left: 50vh;
   opacity: .5;
+  display: none;
 }
 .shape--6{
   top: 50vh;
