@@ -661,12 +661,12 @@ WORK
 .work__description--right {
   position: absolute;
   opacity: 1;
-  transform: translateX(100%);
+  transform: translateX(110%);
 }
 
 .work__description--left {
   position: absolute;
-  transform: translateX(-100%);
+  transform: translateX(-110%);
 }
 
 .work__image {
